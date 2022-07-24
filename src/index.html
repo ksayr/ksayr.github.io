@@ -10,19 +10,24 @@
 </head>
 
 <body>
+
+  <div class="mask">
+    <div class="loader"></div>
+  </div>
   <header>
     <nav>
 
-      <div class="logo">Кришталь Николай</div>
+      <div class="logo"><a href="#home_page">Кришталь Николай</a></div>
 
       <div class="menu">
         <ul>
-          <li>Обо мне </li>
-          <li>Услуги</li>
-          <li>Кейсы</li>
-          <li>Прайс</li>
-          <li>Отзывы</li>
-          <li>Контакты</li>
+          <li><a href="#about_me">Обо мне </a></li>
+          <li><a href="#what_i_can">Услуги</a></li>
+          <li><a href="#cases">Кейсы</a></li>
+          <li><a href="#cost">Прайс</a></li>
+          <li><a href="#statistic">Статистика</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#my_links">Контакты</a></li>
         </ul>
       </div>
 
@@ -30,18 +35,18 @@
   </header>
 
   <main>
-    <div class="main_container">
+    <div class="main_container" id="home_page">
 
-      <div class="hello_page">
+      <section class="hello_page">
         <div class="title">
           <h1>Привет <br> Я Николай Кришталь</h1>
           <h4>Фулл стек веб-разработчик</h4>
-          <input type="submit" value="Обо мне">
-          <input type="submit" value="Мои работы">
+          <input type="button" value="Обо мне">
+          <input type="button" value="Мои работы">
         </div>
-      </div>
+      </section>
 
-      <div class="about_me">
+      <section class="about_me" id="about_me">
         <h2>Обо мне</h2>
 
         <div class="avatar">
@@ -56,11 +61,11 @@
         </div>
 
         <div class="download_resume">
-          <input type="submit" value="Скачать резюме">
+          <input type="button" value="Скачать резюме">
         </div>
-      </div>
+      </section>
 
-      <div class="what_i_can">
+      <section class="what_i_can" id="what_i_can">
         <h2>Что я умею</h2>
 
         <div class="abilitys">
@@ -91,9 +96,9 @@
 
         </div>
 
-      </div>
+      </section>
 
-      <div class="cases">
+      <section class="cases" id="cases">
         <h2>Кейсы</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sint?</p>
 
@@ -104,7 +109,7 @@
           <p>Компания</p>
           <h3>Website:</h3>
           <p>link</p>
-          <input type="submit" value="visit live site">
+          <input type="button" value="visit live site">
         </div>
 
         <div class="info_about_website">
@@ -113,9 +118,9 @@
             numquam quibusdam ipsam voluptas quasi, dolorum nulla ab deserunt neque, quas tempore accusantium doloremque
             iste qui!</p>
         </div>
-      </div>
+      </section>
 
-      <div class="cost">
+      <section class="cost" id="cost">
         <h2>Расчет стоимости</h2>
 
         <div class="selectors">
@@ -156,41 +161,43 @@
           <p>Стоимость</p>
         </div>
 
-      </div>
+      </section>
 
-      <div class="statistic">
-        <h2>Немного статистики</h2>
+      <section class="statistic" id="statistic">
+        <div class="conteiner_statistic">
+          <h2>Немного статистики</h2>
 
-        <div class="indicators">
+          <div class="indicators">
 
-          <div class="indicator">
-            <img src="img/statistics/smile.png" alt="">
-            <h3>120</h3>
-            <p>Счастливых клиентов</p>
-          </div>
+            <div class="indicator">
+              <img src="img/statistics/smile.png" alt="">
+              <h3>120</h3>
+              <p>Счастливых клиентов</p>
+            </div>
 
-          <div class="indicator">
-            <img src="img/statistics/tag.png" alt="">
-            <h3>4600</h3>
-            <p>Часов работы</p>
-          </div>
+            <div class="indicator">
+              <img src="img/statistics/tag.png" alt="">
+              <h3>4600</h3>
+              <p>Часов работы</p>
+            </div>
 
-          <div class="indicator">
-            <img src="img/statistics/galka.png" alt="">
-            <h3>340</h3>
-            <p>Проектов завершено</p>
-          </div>
+            <div class="indicator">
+              <img src="img/statistics/galka.png" alt="">
+              <h3>340</h3>
+              <p>Проектов завершено</p>
+            </div>
 
-          <div class="indicator">
-            <img src="img/statistics/trofey.png" alt="">
-            <h3>23</h3>
-            <p>Наград получено</p>
+            <div class="indicator">
+              <img src="img/statistics/trofey.png" alt="">
+              <h3>23</h3>
+              <p>Наград получено</p>
+            </div>
           </div>
         </div>
 
-      </div>
+      </section>
 
-      <div class="reviews">
+      <section class="reviews" id="reviews">
         <h2>Отзывы</h2>
 
         <div class="photo">
@@ -202,9 +209,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
 
-      </div>
+      </section>
 
-      <div class="my_links">
+      <section class="my_links" id="my_links">
         <h2>Мои контакты</h2>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, deserunt.</p>
@@ -234,10 +241,10 @@
           <input class='submit' type='submit' value="Отправить">
         </div>
 
-      </div>
+      </section>
 
-      <div class="map">
-      </div>
+      <section class="map">
+      </section>
 
     </div>
   </main>
