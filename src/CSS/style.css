@@ -1,5 +1,13 @@
+.body {
+    font-size: 16.67px;
+}
+
 input {
     background: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
 }
 
 .mask {
@@ -30,10 +38,24 @@ input {
     }
 }
 
+h1,
+h2,
+h3,
+h4,
+nav,
+input,
+option,
+div {
+    font-family: Franklin Gothic Medium;
+}
+
+p {
+    font-family: calibri;
+}
+
 h2 {
     color: #263244;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 33.33px;
     text-transform: uppercase;
     text-align: center;
     padding: 108px 0 95px 0;
@@ -64,15 +86,15 @@ nav {
     z-index: 1;
 }
 
-nav a:visited {
-    color: rgb(255, 255, 255);
-}
-
 nav a {
     transition: all 0.1s;
     color: rgb(255, 255, 255);
     transform: scale(1);
     display: inline-block;
+}
+
+nav a:visited {
+    color: rgb(255, 255, 255);
 }
 
 nav a:hover {
@@ -86,7 +108,7 @@ nav a:active {
 .logo {
     margin: 0px 390px;
     float: left;
-    font-size: 26px;
+    font-size: 23.33px;
     animation: coming 1.2s ease-in;
 }
 
@@ -102,8 +124,7 @@ nav a:active {
 
 .menu li {
     float: left;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 16.67px;
     padding-left: 40px;
     text-transform: uppercase;
     opacity: 0;
@@ -189,21 +210,20 @@ main {
 }
 
 .hello_page h1 {
-    font-weight: bold;
-    font-size: 60px;
+    font-size: 79.17px;
     color: #2c384a;
 }
 
 .hello_page h4 {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 20.83px;
     color: #79818d;
 }
 
 .hello_page input {
     margin: 35px 13px;
     padding: 15px 16px;
-    font-size: 16px;
+    font-size: 18.82px;
     border: 1px solid #2c384a;
     border-radius: 5px;
     color: #2c384a;
@@ -235,6 +255,7 @@ main {
 }
 
 .download_resume input {
+    font-size: 16.67px;
     background: rgb(241, 241, 241);
     padding: 10px;
     border: 2px solid #2c384a;
@@ -265,8 +286,9 @@ main {
 }
 
 .what_i_can h4 {
+    font-family: Bahnschrift;
     color: #cf7600;
-    font-size: 15px;
+    font-size: 18.58px;
     margin-bottom: 10px;
 }
 
@@ -298,13 +320,11 @@ main {
 
 .cases h3 {
     text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
 }
 
 .cases h4 {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .client_link {
@@ -314,17 +334,10 @@ main {
     line-height: 30px;
 }
 
-.info_about_website {
-    width: 850px;
-    margin: 0 0 0 780px;
-    line-height: 25px;
-}
-
 .client_link input {
     margin-top: 15px;
     width: 200px;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 20.83px;
     padding: 20px 40px;
     border: 1px solid #63b5ae;
     border-radius: 5px;
@@ -345,22 +358,25 @@ main {
     transform: scale(1.1);
 }
 
+.info_about_website {
+    font-size: 20.83px;
+    width: 850px;
+    margin: 0 0 0 780px;
+    line-height: 25px;
+}
+
 .cost {
     height: 858px;
 }
 
 .cost h2 {
     padding-bottom: 60px;
-}
-
-.cost h2 {
     text-transform: none;
 }
 
 .cost h3 {
     text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 29.17px;
     margin-bottom: 25px;
 }
 
@@ -372,13 +388,8 @@ main {
     margin-bottom: 40px;
 }
 
-.cost p {
-    font-size: 18px;
-    margin-top: 30px;
-}
-
 .cost select {
-    font-size: 15px;
+    font-size: 16.67px;
     color: #737373;
     width: 890px;
     height: 60px;
@@ -392,6 +403,10 @@ main {
     border: 1px solid #d1d1d1;
 }
 
+.cost .total {
+    font-size: 20.83px;
+}
+
 .statistic {
     height: 500px;
 }
@@ -403,8 +418,8 @@ main {
 }
 
 .statistic h3 {
-    font-size: 30px;
-    font-weight: 800;
+    font-family: Impact;
+    font-size: 37.5px;
     margin-bottom: 30px;
 }
 
@@ -413,7 +428,7 @@ main {
     text-align: center;
     width: 1300px;
     color: #323e4f;
-    font-size: 18px;
+    font-size: 16.67px;
     text-transform: uppercase;
     margin-top: 35px;
 }
@@ -507,12 +522,11 @@ main {
 }
 
 .message .submit {
-    font-weight: 550;
     margin-top: 30px;
     width: 120px;
     height: 45px;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 20px;
     color: #fff;
     border: 2px solid #fff;
     background: rgba(252, 0, 0, 0);
@@ -530,12 +544,28 @@ main {
     transform: scale(1.1);
 }
 
+
+.fa-brands {
+    font-size: 30px;
+    transition: all 0.1s;
+    transform: scale(1)
+}
+
+.fa-brands:hover {
+    transform: scale(1.1);
+}
+
+.fa-brands:active {
+    color: #eb8501;
+}
+
 .map {
     background: url(../img/map/map.jpg) center / 100% auto no-repeat;
     height: 350px;
 }
 
 footer {
+    font-family: Arial;
     padding-top: 50px;
     color: #fff;
     background: #354051;
