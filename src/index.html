@@ -2,272 +2,394 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=chrome">
-  <link rel="stylesheet" href="CSS/reset.css">
-  <!--    <link rel="stylesheet" href="CSS/bootstrap.min.css">    -->
-  <link rel="stylesheet" href="CSS/all.css">
-  <link rel="stylesheet" href="CSS/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
 </head>
 
 <body>
 
-  <!--LOADER   <div class="mask">
+    <!--LOADER   <div class="mask">
     <div class="loader"></div>
     </div>   -->
-  <header>
-    <nav>
+    <header>
+        <nav class='fixed-top'>
+            <div class="container">
+                <div class="row justify-content-between">
 
-      <div class="logo"><a href="#home_page">Кришталь Николай</a></div>
+                    <div class="nav_logo col-auto"><a href="#homePage">Кришталь Николай</a></div>
 
-      <div class="menu">
-        <ul>
-          <li><a href="#about_me">Обо мне </a></li>
-          <li><a href="#what_i_can">Услуги</a></li>
-          <li><a href="#cases">Кейсы</a></li>
-          <li><a href="#cost">Прайс</a></li>
-          <li><a href="#statistic">Статистика</a></li>
-          <li><a href="#reviews">Отзывы</a></li>
-          <li><a href="#my_links">Контакты</a></li>
-        </ul>
-      </div>
 
-    </nav>
-  </header>
+                    <ul class="menu col-7 d-none d-lg-flex justify-content-between">
+                        <li><a href="#aboutMe">Обо мне </a></li>
+                        <li><a href="#whatICan">Услуги</a></li>
+                        <li><a href="#cases">Кейсы</a></li>
+                        <li><a href="#cost">Прайс</a></li>
+                        <li><a href="#statistic">Статистика</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#myLinks">Контакты</a></li>
+                    </ul>
 
-  <main>
-    <div class="main_container" id="home_page">
+                    <div class="dropdown d-lg-none col-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#aboutMe">Обо мне</a></li>
+                            <li><a class="dropdown-item" href="#whatICan">Услуги</a></li>
+                            <li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+                            <li><a class="dropdown-item" href="#cost">Прайс</a></li>
+                            <li><a class="dropdown-item" href="#statistic">Статистика</a></li>
+                            <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                            <li><a class="dropdown-item" href="#myLinks">Контакты</a></li>
+                        </ul>
+                    </div>
 
-      <section class="hello_page">
-        <div class="title">
-          <h1>Привет <br> Я Николай Кришталь</h1>
-          <h4>Фулл стек веб-разработчик</h4>
-          <input type="button" value="Обо мне">
-          <input type="button" value="Мои работы">
-        </div>
-      </section>
-
-      <section class="about_me" id="about_me">
-        <h2>Обо мне</h2>
-
-        <div class="avatar">
-          <img src="img/about_me/bw_boy.png" alt="poka nety">
-        </div>
-
-        <div class="text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam enim nobis fugiat voluptatem autem
-            nisi!
-            Dolorem blanditiis quasi voluptatibus vero!</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate iste fuga impedit dolorum quos minus
-            dolor quisquam eum sapiente ipsum.</p>
-        </div>
-
-        <div class="download_resume">
-          <input type="button" value="Скачать резюме">
-        </div>
-      </section>
-
-      <section class="what_i_can" id="what_i_can">
-        <h2>Что я умею</h2>
-
-        <div class="abilitys">
-
-          <div class="ability">
-            <img src="img/what_i_can/noutbook.png" alt="">
-            <h4>Веб-дизайн</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
-          </div>
-
-          <div class="ability">
-            <img src="img/what_i_can/tag.png" alt="">
-            <h4>Разработчик</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
-          </div>
-
-          <div class="ability">
-            <img src="img/what_i_can/rocket.png" alt="">
-            <h4>CEO-Оптимизация</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
-          </div>
-
-          <div class="ability">
-            <img src="img/what_i_can/gramofon.png" alt="">
-            <h4>Маркетинг</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="cases" id="cases">
-        <h2>Кейсы</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sint?</p>
-
-        <img src="img/case/example.jpg" alt="poka nety">
-
-        <div class="client_link">
-          <h3>Client:</h3>
-          <p>Компания</p>
-          <h3>Website:</h3>
-          <p>link</p>
-          <input type="button" value="visit live site">
-        </div>
-
-        <div class="info_about_website">
-          <h4>Название проекта</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias repudiandae, porro commodi dignissimos
-            odio
-            numquam quibusdam ipsam voluptas quasi, dolorum nulla ab deserunt neque, quas tempore accusantium
-            doloremque
-            iste qui!</p>
-        </div>
-      </section>
-
-      <section class="cost" id="cost">
-        <h2>Расчет стоимости</h2>
-
-        <div class="selectors">
-
-          <div class="selector">
-            <h3>Тип сайта</h3>
-            <select name="type_of_site" id="1">
-              <option>Выберете пунтк...</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-
-          <div class="selector">
-            <h3>Дизайн</h3>
-            <select name="design" id="2">
-              <option>Выберете пунтк...</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-
-          <div class="selector">
-            <h3>Адаптивность</h3>
-            <select name="adaptive" id="3">
-              <option>Выберете пунтк...</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-
-          <div class="line"></div>
-
-          <div class="total">
-            <div>Сроки</div>
-            <div>Стоимость</div>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="statistic" id="statistic">
-        <div class="conteiner_statistic">
-          <h2>Немного статистики</h2>
-
-          <div class="indicators">
-
-            <div class="indicator">
-              <img src="img/statistics/smile.png" alt="">
-              <h3>120</h3>
-              <div>Счастливых клиентов</div>
+                </div>
             </div>
+        </nav>
+    </header>
 
-            <div class="indicator">
-              <img src="img/statistics/tag.png" alt="">
-              <h3>4600</h3>
-              <div>Часов работы</div>
-            </div>
+    <main>
+        <div class="main_container" id="homePage">
 
-            <div class="indicator">
-              <img src="img/statistics/galka.png" alt="">
-              <h3>340</h3>
-              <div>Проектов завершено</div>
-            </div>
+            <section class="helloPage">
+                <div class="container">
 
-            <div class="indicator">
-              <img src="img/statistics/trofey.png" alt="">
-              <h3>23</h3>
-              <div>Наград получено</div>
-            </div>
-          </div>
+                    <div class="helloPage_title pt-5">
+                        <h1>Привет <br> Я Николай Кришталь</h1>
+                        <h4>Фулл стек веб-разработчик</h4>
+                        <div class="helloPage_buttons">
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="aboutMe" id="aboutMe">
+                <div class="container">
+
+                    <h2>Обо мне</h2>
+
+                    <div class="aboutMe_avatar">
+                        <img src="img/aboutMe/bw_boy.png" alt="poka nety">
+                    </div>
+
+                    <div class="aboutMe_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta omnis placeat dolorum?
+                            Amet esse temporibus eaque molestiae pariatur aut quis magni. Sequi, doloremque
+                            exercitationem, ipsam odit eligendi illo, architecto magnam id cum ullam voluptatem. Cum
+                            mollitia aut laudantium ipsa.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa id minus, adipisci hic
+                            quam natus voluptatibus nesciunt repellendus reprehenderit amet! Sit nisi magni facere!
+                            Dignissimos, magnam sunt ipsum sint ad aut deserunt iste inventore corrupti saepe pariatur
+                            dolorem beatae?</p>
+                    </div>
+
+                    <div class="aboutMe_downloadResume">
+                        <input type="button" value="Скачать резюме">
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="whatICan" id="whatICan">
+                <div class="container">
+
+                    <h2>Что я умею</h2>
+
+                    <div class="whatICan_abilitys row justify-content-between align-items-center">
+
+                        <div class="whatICan_abilitys_item col-lg-3 col-sm-6 col-12">
+                            <div class="whatICan_abilitys_item_img my-4">
+                                <img src="img/whatICan/noutbook.png" alt="">
+                            </div>
+                            <h4>Веб-дизайн</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
+                        </div>
+
+                        <div class="whatICan_abilitys_item col-lg-3 col-sm-6 col-12">
+                            <div class="whatICan_abilitys_item_img my-4">
+                                <img src="img/whatICan/tag.png" alt="">
+                            </div>
+                            <h4>Разработчик</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
+                        </div>
+
+                        <div class="whatICan_abilitys_item col-lg-3 col-sm-6 col-12">
+                            <div class="whatICan_abilitys_item_img my-4">
+                                <img src="img/whatICan/rocket.png" alt="">
+                            </div>
+                            <h4>CEO-Оптимизация</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
+                        </div>
+
+                        <div class="whatICan_abilitys_item col-lg-3 col-sm-6 col-12">
+                            <div class="whatICan_abilitys_item_img my-4">
+                                <img src="img/whatICan/gramofon.png" alt="">
+                            </div>
+                            <h4>Маркетинг</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ut?</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="cases" id="cases">
+                <div class="container">
+
+                    <h2>Кейсы</h2>
+
+                    <div class="cases_text row justify-content-center">
+                        <div class="col-auto">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sint?</p>
+                        </div>
+                    </div>
+
+                    <div class=" row">
+                        <div class="col">
+
+                            <div class="cases_img">
+                                <img src="img/case/example.jpg" alt="poka nety">
+                            </div>
+
+                            <div class="row justify-content-md-between justify-content-center flex-md-nowrap">
+
+                                <div class="cases_infoAboutWebsite col-auto col-md-8 col-xxl-9 order-md-2">
+                                    <h3>Название проекта</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias repudiandae,
+                                        porro
+                                        commodi
+                                        dignissimos
+                                        odio
+                                        numquam quibusdam ipsam voluptas quasi, dolorum nulla ab deserunt neque, quas
+                                        tempore
+                                        accusantium
+                                        doloremque
+                                        iste qui!</p>
+                                </div>
+
+                                <div class="cases_mainInfo col-md-2 order-md-1">
+                                    <div class="cases_mainInfo_container">
+                                        <div class="cases_mainInfo_container_client">
+                                            <h3>Client:</h3>
+                                            <p>Компания</p>
+                                        </div>
+                                        <div class="cases_mainInfo_container_wedsite">
+                                            <h3>Website:</h3>
+                                            <p>link</p>
+                                        </div>
+                                    </div>
+                                    <input type="button" value="visit live site">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="cost" id="cost">
+                <div class="container p-5">
+                    <div class="row justify-content-center">
+                        <div class="col">
+
+                            <h2>Расчет стоимости</h2>
+
+                            <div class="cost_selectors">
+
+                                <div class="cost_selectors_item ">
+                                    <h3>Тип сайта</h3>
+                                    <select name="type_of_site" id="1">
+                                        <option>Выберете пунтк...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+
+                                <div class="cost_selectors_item">
+                                    <h3>Дизайн</h3>
+                                    <select name="design" id="2">
+                                        <option>Выберете пунтк...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+
+                                <div class="cost_selectors_item">
+                                    <h3>Адаптивность</h3>
+                                    <select name="adaptive" id="3">
+                                        <option>Выберете пунтк...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="cost_line"></div>
+
+                            <div class="cost_total row justify-content-between">
+                                <div class="cost_total_text col">
+                                    <div class="cost_total_text_deadline">Сроки</div>
+                                    <div class="cost_total_text_price">Стоимость</div>
+                                </div>
+                                <div class="cost_total_numders col">
+                                    <div class="cost_total_numbers_deadline">0</div>
+                                    <div class="cost_total_numbers_prise">0</div>
+                                </div>
+                            </div>
+
+                            <div class="cost_request row justify-content-center">
+                                <input type="button" value="Оставить заявку">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="statistic" id="statistic">
+                <div class="container">
+                    <h2>Немного статистики</h2>
+
+                    <div class="statistic_indicators row justify-content-between align-items-center">
+
+                        <div class="statistic_indicators_item col-lg-3 col-sm-6 col-12">
+                            <img src="img/statistic/smile.png" alt="">
+                            <h3>120</h3>
+                            <div>Счастливых клиентов</div>
+                        </div>
+
+                        <div class="statistic_indicators_item col-lg-3 col-sm-6 col-12">
+                            <img src="img/statistic/tag.png" alt="">
+                            <h3>4600</h3>
+                            <div>Часов работы</div>
+                        </div>
+
+                        <div class="statistic_indicators_item col-lg-3 col-sm-6 col-12">
+                            <img src="img/statistic/galka.png" alt="">
+                            <h3>340</h3>
+                            <div>Проектов завершено</div>
+                        </div>
+
+                        <div class="statistic_indicators_item col-lg-3 col-sm-6 col-12">
+                            <img src="img/statistic/trofey.png" alt="">
+                            <h3>23</h3>
+                            <div>Наград получено</div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="reviews" id="reviews">
+                <h2>Отзывы</h2>
+
+                <div class="container">
+
+                    <div class="reviews_photo">
+                        <img src="img/revievs/man.png" alt="poka nety">
+                    </div>
+
+                    <div class="reviews_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eaque odit assumenda
+                            iste
+                            vel
+                            quos
+                            incidunt voluptatum est animi placeat?</p>
+                    </div>
+
+                    <div class="reviews_author">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="myLinks" id="myLinks">
+                <h2>Мои контакты</h2>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, deserunt.</p>
+                        </div>
+                    </div>
+
+                    <div class="myLinks_someInfoLinks row justify-content-center align-items-center">
+
+                        <div class="myLinks_someInfoLinks_item col-lg-4 col-sm-6 col-12">
+                            <p>Санкт-Петербург</p>
+                        </div>
+
+                        <div class="myLinks_someInfoLinks_item col-lg-4 col-sm-6 col-12">
+                            <p>reioyeworiy@affes.com</p>
+                        </div>
+
+                        <div class="myLinks_someInfoLinks_item col-lg-4 col-sm-6 col-12">
+                            <p>+7 932 259-80-45</p>
+                        </div>
+
+                    </div>
+
+                    <div class='myLinks_message'>
+                        <h3>Оставьте мне сообщение</h3>
+
+                        <div class="row justify-content-around">
+                            <input class='input_text col-sm-4 col-10' type='text' placeholder="Имя">
+                            <input class='input_text col-sm-4  col-10 mt-3 mt-sm-0' type='email' placeholder="Email">
+                        </div>
+
+                        <div class="row mt-3 justify-content-center">
+                            <textarea class='input_text col-10' placeholder="Сообщение"></textarea>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <input class='submit' type='submit' value="Отправить">
+                        </div>
+                    </div>
+
+                    <div class="brands row justify-content-center mt-5">
+                        <i class="fa-brands fa-facebook-f col-2 col-ms-1"></i>
+                        <i class="fa-brands fa-twitter col-2 col-ms-1"></i>
+                        <i class="fa-brands fa-dribbble col-2 col-ms-1"></i>
+                        <i class="fa-brands fa-github col-2 col-ms-1"></i>
+                        <i class="fa-brands fa-instagram col-2 col-ms-1"></i>
+                        <i class="fa-brands fa-linkedin-in col-2 col-ms-1"></i>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="map">
+            </section>
         </div>
+    </main>
 
-      </section>
+    <footer>
+        <h4>Copyright2022</h4>
+    </footer>
 
-      <section class="reviews" id="reviews">
-        <h2>Отзывы</h2>
-
-        <div class="photo">
-          <img src="img/revievs/man.png" alt="poka nety">
-        </div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eaque odit assumenda iste vel quos
-          incidunt voluptatum est animi placeat?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-
-      </section>
-
-      <section class="my_links" id="my_links">
-        <h2>Мои контакты</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, deserunt.</p>
-
-        <div class="some_info_links">
-
-          <div class="info_item">
-            <p>Санкт-Петербург</p>
-          </div>
-
-          <div class="info_item">
-            <p>reioyeworiy@affes.com</p>
-          </div>
-
-          <div class="info_item">
-            <p>+7 932 259-80-45</p>
-          </div>
-
-        </div>
-
-        <div class='message'>
-          <h3>Оставьте мне сообщение</h3>
-
-          <input class='input_text first_input' type='text' placeholder="Имя">
-          <input class='input_text first_input' type='email' placeholder="Email"><br>
-          <textarea class='input_text' placeholder="Сообщение"></textarea><br>
-          <input class='submit' type='submit' value="Отправить">
-        </div>
-
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-dribbble"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-      </section>
-
-      <section class="map">
-      </section>
-
-    </div>
-  </main>
-
-  <footer>
-    <h4>Copyright2022</h4>
-  </footer>
-
-  <script src="JS\bootstrap.bundle.min.js"></script>
+    <script src="JS\bootstrap.bundle.min.js"></script>
 
 </body>
 
